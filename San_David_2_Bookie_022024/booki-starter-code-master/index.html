@@ -11,91 +11,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <!---CSS link-->
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
-
     <!--Section 1 Navbar et logo-->
-
     <header>
         <nav>
             <a href="index.html" id="logo"><img class="logo" src="./images/logo/Booki.png" alt="logo booki"></a>
-            <div class="Menu-right">
+            <div class="menu-right">
                 <a href="#" class="menu">Hébergements</a>
                 <a href="#" class="menu">Activités</a>
             </div>
         </nav>
     </header>
-
     <!--Section 2 button Recherche  Search Bar-->
     <main>
-        <form action="#" method="get">
-
+        <div>
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature </p>
             <!--Section 3  Formulaire de Recherche-->
-            <div class="btn-search">
+            <form class="btn-search">
                 <i class="fa-solid fa-location-dot"></i>
-                <label for=""></label>
+                <label for="Search"></label>
                 <input type="text" name="q" id="rechercher" autofocus placeholder="Marseille,France">
                 <!--Bouton rechercher/validation-->
                 <button><span>Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-        </form>
-
+            </form>
+        </div>
         <!--Filtre-->
         <div class="box-filtres">
             <h3 class="title-filtres"><strong>Filtres</strong></h3>
             <div>
-
                 <ul class="list-filtres">
                     <li class="filtres">
                         <p><i class="fa-solid fa-money-bill-wave"></i><strong>Économique</strong></p>
                     </li>
-
                     <li class="filtres">
                         <p><i class="fa-solid fa-person"></i><strong>Familial</strong> </p>
                     </li>
-
                     <li class="filtres">
                         <p><i class="fa-solid fa-heart"></i><strong>Romantique</strong> </p>
                     </li>
-
                     <li class="filtres">
                         <p><i class="fa-solid fa-fire"></i><strong>Nos pépites</strong></p>
                     </li>
-
                 </ul>
             </div>
         </div>
-
         <div class="infos-logements">
             <i class="fa-sharp fa-solid fa-circle-info"></i>
             <span>Plus de 500 logements sont disponibles dans cette ville</span>
         </div>
-
-
-
-
-
-
-
-
-
         <!--Section 3 Hébergement à marseille-->
-
-
         <section class="all-articles">
             <div class="hebergements">
                 <h5>Hébergement à Marseille</h5>
                 <div class="card-hebergements">
-
-
                     <a class="articles" href="#">
                         <div class="card">
                             <img src="./images/hebergements/fred-kleber.jpg" alt="Hotel du port">
@@ -110,9 +82,6 @@
                             </div>
                         </div>
                     </a>
-
-
-
                     <a class="articles" href="#">
                         <div class="card">
                             <img src="./images/hebergements/febrian-zakaria.jpg" alt="Hotel chez amina">
@@ -127,9 +96,6 @@
                             </div>
                         </div>
                     </a>
-
-
-
                     <a class="articles" href="#">
                         <div class="card">
                             <img src="./images/hebergements/reisetopia.jpg" alt="Hotel Les mouettes">
@@ -144,8 +110,6 @@
                             </div>
                         </div>
                     </a>
-
-
                     <a class="articles" href="#">
                         <div class="card">
                             <img src="./images/hebergements/febrian-zakaria.jpg" alt="Hotel de la mer">
@@ -160,8 +124,6 @@
                             </div>
                         </div>
                     </a>
-
-
                     <a class="articles" href="#">
                         <div class="card">
                             <img src="./images/hebergements/marcus-loke.jpg" alt="Auberge la Canebière">
@@ -176,11 +138,6 @@
                             </div>
                         </div>
                     </a>
-
-
-
-
-
                     <a class="articles" href="#">
                         <div class="card">
                             <img src="./images/hebergements/nicate-lee.jpg" alt="Auberge Le panier">
@@ -199,20 +156,8 @@
                 <div>
                     <p class="More"><a href="#"><strong>Afficher plus</strong></a></p>
                 </div>
-
             </div>
-
-            <!--End hébergement à marseille-->
-
-
-
-
-
-
             <!--Section 4 Populaire-->
-
-
-
             <div class="hebergements-and-populaires">
                 <section class="populaires">
                     <div class="populaires-title">
@@ -286,31 +231,13 @@
                     </div>
                 </section>
             </div>
-
-
-
-
         </section>
-
-        <!--End Section populaire-->
-
-
-
     </main>
-
-
-
-
     <!--Section 5 Activités à Marseille-->
-
-
-
     <section class="activites-marseille" id="link-activites">
         <h2>Activités à Marseille</h2>
-
         <div class="list-act">
-
-            <div class="cardz taille" id="activity-1">
+            <div class="cards-act">
                 <a href="#">
                     <img src="./images/activites/reno-laithienne.jpg" alt="Vieux Port">
                     <div class="text-center">
@@ -318,9 +245,7 @@
                     </div>
                 </a>
             </div>
-
-
-            <div class="cards taille " id="activity-2">
+            <div class="cards-act">
                 <a href="#">
                     <img src="./images/activites/paul-hermann.jpg" alt="Fort de Pomègue">
                     <div class="text-center">
@@ -328,10 +253,7 @@
                     </div>
                 </a>
             </div>
-
-
-
-            <div class="cardz taille" id="activity-3">
+            <div class="cards-act">
                 <a href="#">
                     <img src="./images/activites/kilyan-sockalingum.jpg" alt="Parc national des Calanques">
                     <div class="text-center">
@@ -339,9 +261,7 @@
                     </div>
                 </a>
             </div>
-
-
-            <div class="cardt taille" id="activity-4">
+            <div class="cards-act">
                 <a href="#">
                     <img src="./images/activites/florian-wehde.jpg" alt="Notre-Dame-de-la-Garde">
                     <div class="text-center">
@@ -351,14 +271,8 @@
             </div>
         </div>
     </section>
-    <!--End Activités à Marseille-->
-
-
-
     <!--Section 6 Footer-->
-
     <footer class="footer">
-
         <div class="footer-box">
             <div class="blocs">
                 <h3>À propos</h3>
@@ -366,24 +280,18 @@
                 <a href="#">Conditions générales</a>
                 <a href="#">Données et confidentialité</a>
             </div>
-
-
             <div class="blocs">
                 <h3>Nos hébergements</h3>
                 <a href="#">Charte qualité</a>
                 <a href="#">Proposer votre hôtel</a>
             </div>
-
             <div class="blocs">
                 <h3>Assistance</h3>
                 <a href="#">Centre d'aide</a>
                 <a href="#">Nous contacter</a>
             </div>
-
         </div>
-
     </footer>
-
 </body>
 
 </html>
