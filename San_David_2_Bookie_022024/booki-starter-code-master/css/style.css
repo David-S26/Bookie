@@ -11,6 +11,10 @@ body {
     margin: 0 auto;
 }
 
+main {
+    padding: 10px;
+}
+
 .fa-solid.fa-location-dot {
     color: rgb(14, 4, 4);
     height: 100%;
@@ -125,7 +129,6 @@ form h1 {
 }
 
 form p {
-
     padding: 0 0 0 10px;
 }
 
@@ -222,7 +225,7 @@ h5 {
 }
 
 .hebergements p {
-    padding: 10px;
+    padding-left: 10px;
 }
 
 .card-hebergements {
@@ -234,17 +237,14 @@ h5 {
     margin-top: 20px;
 }
 
-.card-hebergements div {
-    min-width: 220px;
-}
-
 .card-hebergements .card {
-    flex-wrap: wrap;
     width: 100%;
 }
 
-.More {
+.more {
     font-size: 18px;
+    margin-left: 15px;
+    margin-bottom: 40px;
 }
 
 .card {
@@ -256,6 +256,11 @@ h5 {
     box-shadow: 0 0 8px var(--dark-grey);
     margin: 0 10px 10px 10px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.fa-chart-line {
+    display: flex;
+    text-align: end;
 }
 
 /*****Stars****/
@@ -274,8 +279,7 @@ a {
 }
 
 .card .stars {
-    margin-top: -15px;
-    padding: 10px;
+    padding-left: 10px;
 }
 
 .card img {
@@ -312,18 +316,15 @@ a {
     box-sizing: border-box;
     max-height: fit-content;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /****** Populaires ***********/
-.populaires a {
-    width: 965px;
-}
-
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .populaires-cards .card {
@@ -332,7 +333,8 @@ a {
 }
 
 .populaires-cards img {
-    width: 33%;
+    width: 30%;
+    min-width: 100px;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -343,7 +345,7 @@ a {
     padding-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     box-sizing: border-box;
 }
 
@@ -388,7 +390,6 @@ a {
 
 .cards-act {
     display: flex;
-    flex-direction: column;
     flex-basis: 22%;
     border-radius: 16px;
     box-shadow: 0 0 8px #d9d9d9;
@@ -399,7 +400,7 @@ a {
 
 .cards-act img {
     border-radius: 16px 16px 0 0;
-    height: 380px;
+    height: 300px;
     width: 310px;
 }
 
@@ -447,22 +448,25 @@ footer {
     }
 
     /*** populaire en 2eme***/
+    .card .card-content {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .all-articles .hebergements-and-populaires {
         width: 95%;
     }
 
-    .hebergements-and-populaires {
-        width: 100%;
-    }
-
     .populaires-cards {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
 
     .populaires-cards a {
-        width: 100%;
+        width: 95%;
+    }
+
+    .populaires-cards img {
+        object-fit: cover;
     }
 
     .populaires-cards .card-title {
@@ -471,10 +475,6 @@ footer {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
-    }
-
-    .all-articles {
-        flex-direction: column;
     }
 
     .all-articles div {
@@ -487,15 +487,19 @@ footer {
         width: 95%;
     }
 
+    .more {
+        margin-top: 20px;
+    }
+
     /***activités à marseiille***/
     .cards-act img {
         width: 220px;
     }
 }
 
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
-
     .fa-solid.fa-magnifying-glass {
         display: inline;
         color: #F2F2F2;
@@ -569,6 +573,22 @@ footer {
         white-space: nowrap;
     }
 
+    /*** populaire ***/
+    .populaires-cards .card-rating {
+        display: flex;
+        justify-items: flex-end;
+        margin-top: 20px;
+    }
+
+    .populaires-cards img {
+        height: 136px;
+    }
+
+    .hebergements-and-populaires section {
+        padding: 0;
+        margin-top: 20px;
+    }
+
     .populaires a {
         display: flex;
         flex-wrap: wrap;
@@ -596,16 +616,114 @@ footer {
     }
 }
 
-/***Small device 320px ***/
-@media (max-width:320px) {
+@media (max-width:710px) {
+    .populaires-cards .card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards img {
+        object-fit: none;
+        width: max-content;
+        width: 100%;
+    }
+}
+
+@media (max-width:630px) {
+    .populaires {
+        margin: 30px;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards .card {
+        margin-left: 30px;
+
+    }
+}
+
+@media (max-width:500px) {
+    .articles {
+        width: 95%;
+    }
+}
+
+/*** Small device 425px ***/
+@media (max-width:425px) {
+    h5 {
+        font-size: 24px;
+        margin-left: -20px
+    }
+
+    h2 {
+        margin-left: -10px;
+    }
 
     h1 {
-        margin-left: 20px;
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    main div p {
+        margin-left: 10px;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .all-articles {
+        flex-direction: column-reverse;
+    }
+
+    .all-articles .hebergements-and-populaires {
+        border-radius: 0;
+        width: fit-content;
+        background-color: #F2F2F2;
+        margin: 0;
+    }
+
+    /***Section populaire ***/
+    .hebergements-and-populaires .card {
+        min-width: 375px;
+        margin-left: -20px;
+    }
+
+    /*** Section hebergements ***/
+    .all-articles .hebergements {
+        background-color: white;
+    }
+}
+
+
+/***Small device 320px ***/
+@media (max-width:375px) {
+
+    /*** activités à marseille ***/
+    .list-act {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .hebergements-and-populaires .card {
+        min-width: 320px;
+        margin-left: -20px;
+    }
+}
+
+
+/***Small device 320px ***/
+@media (max-width:320px) {
+    h1 {
+        margin-left: 10px;
         font-size: 22px;
     }
 
     main div p {
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .logo {
@@ -696,15 +814,34 @@ footer {
         width: fit-content;
         background-color: #F2F2F2;
         margin: 0;
+        width: 410px;
+        padding-bottom: 20px;
     }
 
     .populaires-cards {
         flex-direction: column;
+
+    }
+
+    .populaires {
+        margin-left: 20px;
+    }
+
+    .populaires-cards .card {
+        min-width: 360px;
+        margin-left: 15px;
+    }
+
+    .card-content .card-txt {
+        margin-top: -5px;
     }
 
     .populaires-cards a {
-        width: 370px;
         margin-left: -18px;
+    }
+
+    .card-title {
+        font-size: 24px;
     }
 
     /***hebergements à marseille***/
@@ -713,20 +850,20 @@ footer {
         width: fit-content;
     }
 
-    .card-hebergements {
-        width: 90%;
-    }
-
     .hebergements h5 {
         white-space: nowrap;
     }
 
-    .More {
+    .hebergements .card-hebergements {
+        min-width: 355px;
+    }
+
+    .more {
         margin-top: 20px;
     }
 
     .articles {
-        width: 90%;
+        width: 100%;
     }
 
     main {
@@ -734,8 +871,12 @@ footer {
     }
 
     /***activités à marseille***/
+    .list-act .cards-act {
+        width: 350px
+    }
+
     .cards-act img {
-        width: 320px;
+        width: 350px;
     }
 
     .cards-act {
@@ -758,3 +899,5 @@ footer {
         font-size: 20px;
     }
 }
+
+s
