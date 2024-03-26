@@ -582,6 +582,7 @@ footer {
 
     .populaires-cards img {
         height: 136px;
+        min-width: 80px;
     }
 
     .hebergements-and-populaires section {
@@ -618,13 +619,19 @@ footer {
 
 @media (max-width:710px) {
 
-
     .populaires-cards img {
-        object-fit: none;
-        width: max-content;
-        width: 100%;
+        width: 90%;
         height: auto;
     }
+
+    .cards-act {
+        width: 20%;
+    }
+
+    .cards-act img {
+        width: 100%;
+    }
+
 }
 
 @media (max-width:630px) {
@@ -647,6 +654,8 @@ footer {
     .populaires-cards img {
         max-height: 138px;
     }
+
+
 }
 
 @media (max-width:500px) {
@@ -657,251 +666,270 @@ footer {
     .populaires-cards .card {
         height: 135px;
     }
-}
-
-/*** Small device 425px ***/
-@media (max-width:425px) {
-    h5 {
-        font-size: 24px;
-        margin-left: -20px
-    }
-
-    h2 {
-        margin-left: -10px;
-    }
-
-    h1 {
-        font-size: 22px;
-        margin-left: 10px;
-    }
-
-    main div p {
-        margin-left: 10px;
-    }
-
-    main {
-        padding: 0;
-    }
-
-    .all-articles {
-        flex-direction: column-reverse;
-    }
-
-    .all-articles .hebergements-and-populaires {
-        border-radius: 0;
-        width: fit-content;
-        background-color: #F2F2F2;
-        margin: 0;
-    }
-
-    /***Section populaire ***/
-    .hebergements-and-populaires .card {
-        min-width: 375px;
-        margin-left: -20px;
-    }
-
-    /*** Section hebergements ***/
-    .all-articles .hebergements {
-        background-color: white;
-    }
-}
-
-
-/***Small device 320px ***/
-@media (max-width:375px) {
-
-    /*** activités à marseille ***/
-    .list-act {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-    }
-
-    .hebergements-and-populaires .card {
-        min-width: 320px;
-        margin-left: -10px;
-    }
-}
-
-/***Small device 320px ***/
-@media (max-width:320px) {
-    h1 {
-        margin-left: 10px;
-        font-size: 22px;
-    }
-
-    main div p {
-        margin-left: 10px;
-    }
-
-    .logo {
-        padding-left: 80px;
-    }
-
-    header {
-        width: 100%;
-        padding: 0;
-    }
-
-    .menu-right {
-        width: 410px;
-    }
 
     .list-act {
-        display: block;
-    }
-
-    .list-act img {
-        height: 145px;
-    }
-
-    form .btn-search {
-        width: 100%;
-    }
-
-    form h1 {
-        display: flex;
-        padding-left: 10px;
-    }
-
-    form p {
-        padding-left: 10px;
-    }
-
-    .btn-search i {
-        color: black;
-    }
-
-    form input {
-        padding-left: 44px;
-        width: 62%;
-    }
-
-    .btn-search {
-        margin-left: 30px;
-    }
-
-    /***filtres***/
-    .box-filtres {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        width: 390px;
-        margin: 0;
-    }
-
-    .list-filtres {
-        gap: 10px;
-    }
-
-    .all-articles {
-        flex-direction: column-reverse;
-    }
-
-    .infos-logements {
-        margin-top: 20px;
-        margin-bottom: 20px
-    }
-
-    /***filtres***/
-    .box-filtres {
-        display: flex;
-    }
-
-    .box-filtres h3 {
-        display: flex;
-    }
-
-    .all-articles {
-        width: fit-content;
-    }
-
-    /***populaires***/
-    .all-articles .hebergements-and-populaires {
-        border-radius: 0;
-        width: fit-content;
-        background-color: #F2F2F2;
-        margin: 0;
-        width: 410px;
-        padding-bottom: 20px;
-    }
-
-    .populaires-cards {
         flex-direction: column;
-
-    }
-
-    .populaires {
-        margin-left: 20px;
-    }
-
-    .populaires-cards .card {
-        min-width: 360px;
-        margin-left: 15px;
-    }
-
-    .populaires-cards a {
-        margin-left: -18px;
-    }
-
-    .card-title {
-        font-size: 24px;
-    }
-
-    /***hebergements à marseille***/
-    .all-articles .hebergements {
-        background-color: white;
-        width: fit-content;
-    }
-
-    .hebergements h5 {
-        white-space: nowrap;
-    }
-
-    .hebergements .card-hebergements {
-        min-width: 355px;
-    }
-
-    .more {
-        margin-top: 20px;
-    }
-
-    .articles {
-        width: 100%;
-    }
-
-    main {
-        padding: 0;
-    }
-
-    /***activités à marseille***/
-    .list-act .cards-act {
-        width: 350px
-    }
-
-    .cards-act img {
-        width: 350px;
+        align-items: center;
     }
 
     .cards-act {
-        margin-bottom: 20px;
-        margin-left: 20px;
+        width: auto;
     }
 
-    /***footer***/
-    .footer {
+    .cards-act img {
         width: max-content;
+        min-width: 310px;
     }
 
-    .footer-box {
-        display: flex;
-        flex-direction: column;
-        width: 410px;
+    /*** Small device 425px ***/
+    @media (max-width:425px) {
+        h5 {
+            font-size: 24px;
+            margin-left: -20px
+        }
+
+        h2 {
+            margin-left: -10px;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-left: 10px;
+        }
+
+        main div p {
+            margin-left: 10px;
+        }
+
+        main {
+            padding: 0;
+        }
+
+        .all-articles {
+            flex-direction: column-reverse;
+        }
+
+        .all-articles .hebergements-and-populaires {
+            border-radius: 0;
+            width: fit-content;
+            background-color: #F2F2F2;
+            margin: 0;
+        }
+
+        /***Section populaire ***/
+        .hebergements-and-populaires .card {
+            min-width: 375px;
+            margin-left: -20px;
+        }
+
+        /*** Section hebergements ***/
+        .all-articles .hebergements {
+            background-color: white;
+        }
+
+        .cards-act img {
+            width: 317px;
+        }
     }
 
-    footer a {
-        font-size: 20px;
-    }
-}
 
-s
+    /***Small device 320px ***/
+    @media (max-width:375px) {
+
+        /*** activités à marseille ***/
+        .list-act {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+
+        .hebergements-and-populaires .card {
+            min-width: 320px;
+            margin-left: -10px;
+        }
+
+        .cards-act img {
+            width: min-content;
+        }
+    }
+
+    /***Small device 320px ***/
+    @media (max-width:320px) {
+        h1 {
+            margin-left: 10px;
+            font-size: 22px;
+        }
+
+        main div p {
+            margin-left: 10px;
+        }
+
+        .logo {
+            padding-left: 80px;
+        }
+
+        header {
+            width: 100%;
+            padding: 0;
+        }
+
+        .menu-right {
+            width: 410px;
+        }
+
+        .list-act {
+            display: block;
+        }
+
+        .list-act img {
+            height: 145px;
+        }
+
+        form .btn-search {
+            width: 100%;
+        }
+
+        form h1 {
+            display: flex;
+            padding-left: 10px;
+        }
+
+        form p {
+            padding-left: 10px;
+        }
+
+        .btn-search i {
+            color: black;
+        }
+
+        form input {
+            padding-left: 44px;
+            width: 62%;
+        }
+
+        .btn-search {
+            margin-left: 30px;
+        }
+
+        /***filtres***/
+        .box-filtres {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            width: 390px;
+            margin: 0;
+        }
+
+        .list-filtres {
+            gap: 10px;
+        }
+
+        .all-articles {
+            flex-direction: column-reverse;
+        }
+
+        .infos-logements {
+            margin-top: 20px;
+            margin-bottom: 20px
+        }
+
+        /***filtres***/
+        .box-filtres {
+            display: flex;
+        }
+
+        .box-filtres h3 {
+            display: flex;
+        }
+
+        .all-articles {
+            width: fit-content;
+        }
+
+        /***populaires***/
+        .all-articles .hebergements-and-populaires {
+            border-radius: 0;
+            width: fit-content;
+            background-color: #F2F2F2;
+            margin: 0;
+            width: 410px;
+            padding-bottom: 20px;
+        }
+
+        .populaires-cards {
+            flex-direction: column;
+
+        }
+
+        .populaires {
+            margin-left: 20px;
+        }
+
+        .populaires-cards .card {
+            min-width: 360px;
+            margin-left: 15px;
+        }
+
+        .populaires-cards a {
+            margin-left: -18px;
+        }
+
+        .card-title {
+            font-size: 24px;
+        }
+
+        /***hebergements à marseille***/
+        .all-articles .hebergements {
+            background-color: white;
+            width: fit-content;
+        }
+
+        .hebergements h5 {
+            white-space: nowrap;
+        }
+
+        .hebergements .card-hebergements {
+            min-width: 355px;
+        }
+
+        .more {
+            margin-top: 20px;
+        }
+
+        .articles {
+            width: 100%;
+        }
+
+        main {
+            padding: 0;
+        }
+
+        /***activités à marseille***/
+        .list-act .cards-act {
+            width: 350px
+        }
+
+        .cards-act img {
+            width: 350px;
+        }
+
+        .cards-act {
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        /***footer***/
+        .footer {
+            width: max-content;
+        }
+
+        .footer-box {
+            display: flex;
+            flex-direction: column;
+            width: 410px;
+        }
+
+        footer a {
+            font-size: 20px;
+        }
+    }
