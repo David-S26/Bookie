@@ -619,8 +619,6 @@ footer {
         min-width: 298px;
     }
 
-    .hebergements {}
-
     .hebergements .card-hebergements {
         display: flex;
         justify-content: space-around;
@@ -741,7 +739,6 @@ footer {
     }
 
     .hebergements-and-populaires section {
-
         padding-left: 0;
     }
 
@@ -756,8 +753,6 @@ footer {
     .populaires-cards .card {
         min-width: 350px;
     }
-
-
 
     .card-title {
         font-size: 24px;
